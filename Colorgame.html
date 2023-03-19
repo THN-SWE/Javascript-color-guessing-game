@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- bootstrap 5 link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="Colorgame.css" />
+
+    <title>Guess the Color Game</title>
+  </head>
+  <body>
+    <h1 class="text-center">Guess the Color !</h1>
+
+    <!-- main game window -->
+    <div class="container">
+      <div class="col">
+        <div class="rgb row text-center gx-5">
+          <div class="row">
+            <span id="RGB" class="col col-7"></span>
+
+            <div class="col" id="red"></div>
+            <div class="col" id="green"></div>
+            <div class="col" id="blue"></div>
+          </div>
+        </div>
+        <div class="colors row justify-content-md-center">
+          <div class="col col-2 text-center opt">
+            <button style="height: 100%; width: 100%;" onclick=getButton(this.id) id="col1"></button>
+          </div>
+          <div class="col col-2 text-center opt" >
+            <button style="height: 100%; width: 100%;"onclick=getButton(this.id) id="col2" ></button>
+          </div>
+          <div class="col col-2 text-center opt">
+            <button style="height: 100%; width: 100%; " onclick=getButton(this.id) id="col3"></button>
+          </div>
+        </div>
+        <div class="row colors justify-content-md-center">
+          <div class="col col-2 text-center opt" >
+            <button style="  height: 100%; width: 100%;" onclick=getButton(this.id) id="col4"></button>
+          </div>
+          <div class="col col-2 text-center opt" >
+            <button style="  height: 100%; width: 100%;" onclick=getButton(this.id) id="col5"></button>
+          </div>
+          <div class="col col-2 text-center opt">
+            <button style="  height: 100%; width: 100%;" onclick=getButton(this.id) id="col6"></button>
+          </div>
+        </div>
+        <div class="row colors justify-content-md-center">
+          <div class="col col-2 text-center opt" >
+            <button style="  height: 100%; width: 100%;" onclick=getButton(this.id) id="col7"></button>
+          </div>
+          <div class="col col-2 text-center opt" >
+            <button style="  height: 100%; width: 100%;" onclick=getButton(this.id) id="col8"></button>
+          </div>
+          <div class="col col-2 text-center opt">
+            <button style= " height: 100%; width: 100%;" onclick=getButton(this.id) id="col9"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Colorgame.js"></script>
+
+  </body>
+</html>
